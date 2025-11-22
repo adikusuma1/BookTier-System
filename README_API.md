@@ -88,11 +88,11 @@ Lokasi File: app/services/google_books.py
 
 Logika Program:
 
-- [ ] Menerima input string query (Judul Buku).
-- [ ] Mengirim request ke API publik https://www.googleapis.com/books/v1/volumes.
-- [ ] Mengambil hasil paling atas (indeks 0).
-- [ ] Mengekstrak data penting: title, authors, pageCount, categories, dan previewLink.
-- [ ] Mengembalikan data bersih dalam bentuk Dictionary.
+- [x] Menerima input string query (Judul Buku).
+- [x] Mengirim request ke API publik https://www.googleapis.com/books/v1/volumes.
+- [x] Mengambil hasil paling atas (indeks 0).
+- [x] Mengekstrak data penting: title, authors, pageCount, categories, dan previewLink.
+- [x] Mengembalikan data bersih dalam bentuk Dictionary.
 
 Prompt untuk AI Coding (Vibe Coding):
 
@@ -139,7 +139,7 @@ Agar data yang keluar masuk API rapi dan valid.
 
 Lokasi File: app/models.py
 
-- [ ] Buatkan Pydantic Models di app/models.py:
+- [x] Buatkan Pydantic Models di app/models.py:
 
 BookRequest: Menerima title (str).
 
@@ -200,14 +200,14 @@ Cara Testing (Tanpa Frontend):
 
 Indikator Sukses (Checklist):
 
-- [ ] Server merespons code 200 OK.
-- [ ] Response Body berisi JSON dengan data:
+- [x] Server merespons code 200 OK.
+- [x] Response Body berisi JSON dengan data:
 
-  - title: "Laskar Pelangi"
+  - title: "Harry Potter"
   - page_count: Sekian ratus halaman.
   - screenshots: String panjang acak (ini adalah base64 gambar).
 
-- [ ] Terminal backend tidak menunjukkan error merah.
+- [x] Terminal backend tidak menunjukkan error merah.
 
 💡 Tips Debugging untuk Tahap Ini
 - Playwright Timeout: Jika internet lambat, scraper mungkin gagal loading Google Books dalam 10 detik. Anda bisa naikkan timeout di script scraper menjadi 30000ms (30 detik).
